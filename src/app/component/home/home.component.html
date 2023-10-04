@@ -1,0 +1,32 @@
+<div class="box">
+    <h1 class="title"> Angular Todo List</h1>
+    <hr>
+
+    <form class="TaskForm" [formGroup]="RegisterForm" (ngSubmit)="AddTask()">
+        <input class="taskInput" type="text" id="fname" name="task_name" formControlName="task_name" placeholder="Enter Task">
+        &nbsp;
+        &nbsp;
+        <button  class="buttonAdd"  type="submit" class="btn btn-primary" style="font-size: 11px;">Add Task</button>
+    </form>
+    <hr>
+    <div class="dis-task" *ngFor="let item of taskList">
+        <h3 class="tasks">{{item.task_name}}</h3>
+        <div class="twoButton">
+           <button type="submit" class="btn btn-success" (click)="Complete(item.id)">Completed</button>
+           <button type="button" class="btn btn-danger" (click)="DeleteTask(item.id)">Delete</button>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <h1 class="title">Complete Task</h1>
+    <div class="displayTask>">
+        <div class="dis-task" *ngFor="let item of completeTask">
+            <h3 class="tasks">{{item.task_name}}</h3>
+            <div class="twoButton">
+               <button type="button" class="btn btn-danger" (click)="RemoveTask(item.id)">Delete</button>
+            </div>
+        </div>
+
+    </div>
+</div>

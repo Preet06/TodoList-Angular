@@ -1,0 +1,52 @@
+.box{
+
+    height: 100%;
+    width: 500px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.TaskForm{
+    text-align: center;
+    
+}
+
+.taskInput{
+    width: 60%;
+}
+
+.buttonAdd{
+    margin-left: 10px;
+}
+
+.dis-task{
+    
+    border: 2px solid rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    display: flex;
+
+}
+
+.twoButton{
+    margin-left: 5px;
+    text-align: right;
+}
+
+.twoButton{
+    margin-left: auto;
+}
+
+.displayTask{
+    border: 2px solid rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    background-color: aliceblue;
+}
